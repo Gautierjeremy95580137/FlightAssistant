@@ -18,11 +18,23 @@ public class MainActivity extends AppCompatActivity {
                 goToAbout();
             }
         });
+
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToCharts();
+            }
+        });
     }
 
     private void goToAbout() {
         final Intent intentAbout = new Intent(this, AboutActivity.class);
         startActivity(intentAbout);
+    }
+
+    private void goToCharts() {
+        final Intent intentCharts = new Intent(this, ChartsActivity.class);
+        startActivity(intentCharts);
     }
 
 
