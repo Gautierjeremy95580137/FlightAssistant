@@ -4,15 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/f3"
     tools:context=".AboutActivity">
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:background="@android:color/white"
+        android:fontFamily="@font/andada"
+        android:gravity="center"
+        android:text="Flight Assistant est une application concue pour les pilotes virtuel. Sa missions est de proposer une consultation des cartes des aerodromes francais. Elle propose aussi des convertions simples. Cette application a été concue par Jérémy GAUTIER, un élève de la Coding Factory"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#020202"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.549" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="81dp"
+        android:layout_height="32dp"
+        android:fontFamily="@font/andada"
+        android:gravity="center"
+        android:text="Version :"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.851" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="36dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:text="1.0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
