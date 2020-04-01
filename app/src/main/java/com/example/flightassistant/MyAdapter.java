@@ -2,19 +2,30 @@ package com.example.flightassistant;
 
 
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Arrays;
 import java.util.List;
 
+import static androidx.core.content.ContextCompat.startActivity;
+
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
+
+
 
     private final List<Pair<String, String>> characters = Arrays.asList(
             Pair.create("LFBA", "AGEN LA GARENNE"),
@@ -184,6 +195,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         private final TextView name;
         private final TextView description;
+        private static final String googleDocsUrl = "http://docs.google.com/viewer?url=";
+
 
         private Pair<String, String> currentPair;
 
@@ -193,22 +206,53 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             name = ((TextView) itemView.findViewById(R.id.textViewAirport));
             description = ((TextView) itemView.findViewById(R.id.textView6));
 
+           /* yourButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(.this, PdfView.class));
+                    //goToPdf();
+                }
+            });*/
+
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    new AlertDialog.Builder(itemView.getContext())
-                            .setTitle(currentPair.first)
-                            .setMessage(currentPair.second)
-                            .show();
-                }
-            });
-        }
+                   // new AlertDialog.Builder(itemView.getContext())
+                            //.setTitle(currentPair.first)
+                           // .setMessage(currentPair.second)
+                            //.show();
+
+                    //Intent intent = new Intent(this,PdfViewActivity.class);
+                    Intent intent = new Intent(view.getContext(), PdfActivity.class);
+                    view.getContext().startActivity(intent);
+
+
+                    //Intent intent = new Intent(Intent.ACTION_VIEW);
+                   // intent.setDataAndType(Uri.parse(googleDocsUrl + "https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA"), "text/html");
+
+                    // new Intent(PdfViewActivity);
+                    //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA"));
+                    //startActivity(PdfViewActivity);
+
+
+
+                    }
+                });
+            }
+
 
         public void display(Pair<String, String> pair) {
             currentPair = pair;
             name.setText(pair.first);
             description.setText(pair.second);
         }
+
+        public void PdfGo(View v){
+
+        }
+
+
     }
 
 }

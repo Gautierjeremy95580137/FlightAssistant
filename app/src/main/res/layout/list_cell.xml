@@ -37,4 +37,18 @@
         app:layout_constraintStart_toEndOf="@+id/textViewAirport"
         app:layout_constraintTop_toTopOf="@+id/textViewAirport"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="46dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

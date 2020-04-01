@@ -1,0 +1,40 @@
+package com.example.flightassistant;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+public class PdfActivity extends AppCompatActivity {
+    private WebView webView;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_pdf);
+        webView = (WebView) findViewById(R.id.webview);
+       // webView.setWebViewClient(new WebViewClient());
+        webView.getSettings().setSupportZoom(true);
+        webView.getSettings().setJavaScriptEnabled(true);
+       // WebSettings webSettings = webView.getSettings();
+        //webSettings.setAllowContentAccess(true);
+        //webSettings.setAppCacheEnabled(true);
+        //webSettings.setDomStorageEnabled(true);
+        //webSettings.setUseWideViewPort(true);
+        webView.getSettings().setAllowContentAccess(true);
+        webView.getSettings().setAppCacheEnabled(true);
+        webView.getSettings().setUseWideViewPort(true);
+        webView.getSettings().setDomStorageEnabled(true);
+
+
+
+        String url = "https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA";
+        webView.loadUrl("https://docs.google.com/gview?embedded=true&url="+url);
+       // webView.loadUrl("https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA");
+       // webView.loadUrl("https://www.google.com/");
+    }
+
+
+
+}
