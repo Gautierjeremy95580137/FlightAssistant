@@ -31,7 +31,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             Pair.create("LFBA", "AGEN LA GARENNE"),
             Pair.create("LFMA", "AIX LES MILLES"),
             Pair.create("LFKJ", "AJACCIO NAPOLEON BONAPARTE"),
-            Pair.create("LFAQ", "ABERT BRAY"),
+            Pair.create("LFAQ", "ALBERT BRAY"),
             Pair.create("LFCI", "ALBI LE SEQUESTRE"),
             Pair.create("LFAY", "AMIENS-GLISY"),
             Pair.create("LFJR", "ANGERS MARCE"),
@@ -224,8 +224,85 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                             //.show();
 
                     //Intent intent = new Intent(this,PdfViewActivity.class);
-                    Intent intent = new Intent(view.getContext(), PdfActivity.class);
-                    view.getContext().startActivity(intent);
+                    if(name.getText()=="LFBA"|| description.getText()=="AGEN LA GARENNE") {
+                        Intent intent = new Intent(view.getContext(), PdfActivity.class);
+                        view.getContext().startActivity(intent);
+                    }else if(name.getText()=="LFMA"|| description.getText()=="AIX LES MILLES") {
+                        Intent intent1 = new Intent(view.getContext(), LfmaActivity.class);
+                        view.getContext().startActivity(intent1);
+                    }else if(name.getText()=="LFKJ"|| description.getText()=="AJACCIO NAPOLEON BONAPARTE"){
+                        Intent intent2 = new Intent(view.getContext(), LfkjActivity.class);
+                        view.getContext().startActivity(intent2);
+                    }else if(name.getText()=="LFAQ"|| description.getText()=="ALBERT BRAY"){
+                        Intent intent3 = new Intent(view.getContext(), LfaqActivity.class);
+                        view.getContext().startActivity(intent3);
+                    }else if(name.getText()=="LFCI"|| description.getText()=="ALBI LE SEQUESTRE"){
+                        Intent intent4 = new Intent(view.getContext(), LfciActivity.class);
+                        view.getContext().startActivity(intent4);
+                    }else if(name.getText()=="LFKJ"|| description.getText()=="AJACCIO NAPOLEON BONAPARTE"){
+                        Intent intent2 = new Intent(view.getContext(), LfkjActivity.class);
+                        view.getContext().startActivity(intent2);
+                    }else if(name.getText()=="LFAQ"|| description.getText()=="ALBERT BRAY"){
+                        Intent intent3 = new Intent(view.getContext(), LfaqActivity.class);
+                        view.getContext().startActivity(intent3);
+                    }else if(name.getText()=="LFCI"|| description.getText()=="ALBI LE SEQUESTRE"){
+                        Intent intent4 = new Intent(view.getContext(), LfciActivity.class);
+                        view.getContext().startActivity(intent4);
+                    }else if(name.getText()=="LAFAY"|| description.getText()=="AMIENS-GLISY"){
+                        Intent intent5 = new Intent(view.getContext(), LfayActivity.class);
+                        view.getContext().startActivity(intent5);
+                    }else if(name.getText()=="LFJR"|| description.getText()=="ANGERS MARCE"){
+                        Intent intent6 = new Intent(view.getContext(), LfjrActivity.class);
+                        view.getContext().startActivity(intent6);
+                    }else if(name.getText()=="LFBU"|| description.getText()=="ANGOULEME BRIE CHAMPNIERS"){
+                        Intent intent7 = new Intent(view.getContext(), LfbuActivity.class);
+                        view.getContext().startActivity(intent7);
+                    }else if(name.getText()=="LFLP"|| description.getText()=="ANNECY MEYTHET"){
+                        Intent intent8 = new Intent(view.getContext(), LflpActivity.class);
+                        view.getContext().startActivity(intent8);
+                    }else if(name.getText()=="LFDH"|| description.getText()=="AUCH GERS"){
+                        Intent intent9 = new Intent(view.getContext(), LfdhActivity.class);
+                        view.getContext().startActivity(intent9);
+                    }else if(name.getText()=="LFLW"|| description.getText()=="AURILLAC"){
+                        Intent intent10 = new Intent(view.getContext(), LflwActivity.class);
+                        view.getContext().startActivity(intent10);
+                    }else if(name.getText()=="LFLA"|| description.getText()=="AUXERRE BRANCHES"){
+                        Intent intent11 = new Intent(view.getContext(), LflaActivity.class);
+                        view.getContext().startActivity(intent11);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }
 
 
                     //Intent intent = new Intent(Intent.ACTION_VIEW);
@@ -249,7 +326,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         }
 
         public void PdfGo(View v){
-
+            name.getText();
+            description.getText();
         }
 
 
