@@ -22,9 +22,24 @@ public class ChecksActivity extends AppCompatActivity {
             }
 
         });
+        Button bBoeing = findViewById(R.id.button9);
+        bBoeing.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToBoeing();
+            }
+        });
 
 
     }
+
+    public void goToBoeing(){
+        Intent intent = new Intent(this, BoeingActivity.class);
+        startActivity(intent);
+
+    }
+
+
     public void goToAirbus(){
         Intent intent = new Intent(this, AirbusActivity.class);
         startActivity(intent);
