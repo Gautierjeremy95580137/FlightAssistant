@@ -12,6 +12,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //declaration des boutton et des listeners
         findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,27 +49,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    //fonctions vers l'activité about
     private void goToAbout() {
         final Intent intentAbout = new Intent(this, AboutActivity.class);
         startActivity(intentAbout);
     }
-
+    //fonctions vers l'activité de la liste de aérodrome
     private void goToCharts() {
         final Intent intentCharts = new Intent(this, ChartsActivity.class);
         startActivity(intentCharts);
     }
-
+    //fonctions vers l'activité des checklist
     private void goToCheck(){
         final Intent intentChecks = new Intent(this,ChecksActivity.class);
         startActivity(intentChecks);
     }
-
+    //fonctions vers l'activité du Top Of Descent
     private void goToTod(){
         final Intent intentTod = new Intent(this,TodActivity.class);
         startActivity(intentTod);
     }
-
+    //fonctions vers l'activité des conversions
     private void goToConv(){
 
         final Intent intentConv = new Intent(this,ConvActivity.class);

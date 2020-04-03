@@ -27,7 +27,7 @@ import static androidx.core.content.ContextCompat.startActivity;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
 
-
+    //création de la liste des aerdromes pour le recyclerview
     private final List<Pair<String, String>> characters = Arrays.asList(
             Pair.create("LFBA", "AGEN LA GARENNE"),
             Pair.create("LFMA", "AIX LES MILLES"),
@@ -179,6 +179,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return characters.size();
     }
 
+    //view holder
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
@@ -194,6 +195,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
+
+        //declaration de variables utiles
         private final TextView name;
         private final TextView description;
         private static final String googleDocsUrl = "http://docs.google.com/viewer?url=";
@@ -207,26 +210,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             name = ((TextView) itemView.findViewById(R.id.textViewAirport));
             description = ((TextView) itemView.findViewById(R.id.textView6));
 
-           /* yourButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    startActivity(new Intent(.this, PdfView.class));
-                    //goToPdf();
-                }
-            });*/
 
 
+            // listener sur tout les elements de la recycler view
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                   // new AlertDialog.Builder(itemView.getContext())
-                            //.setTitle(currentPair.first)
-                           // .setMessage(currentPair.second)
-                            //.show();
 
-
-
-                    //Intent intent = new Intent(this,PdfViewActivity.class);
                     if(name.getText()=="LFBA"|| description.getText()=="AGEN LA GARENNE") {
                         Intent intent = new Intent(view.getContext(), PdfActivity.class);
                         view.getContext().startActivity(intent);
@@ -662,18 +652,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     }
 
 
-                    //Intent intent = new Intent(Intent.ACTION_VIEW);
-                   // intent.setDataAndType(Uri.parse(googleDocsUrl + "https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA"), "text/html");
 
-                    // new Intent(PdfViewActivity);
-                    //Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.sia.aviation-civile.gouv.fr/dvd/eAIP_26_MAR_2020/FRANCE/AIRAC-2020-03-26/pdf/FR-AD-2.LFBA-fr-FR.pdf#AD-2.eAIP.LFBA"));
-                    //startActivity(PdfViewActivity);
-
-
-
-                    }
-                });
-            }
+                }
+            });
+        }
 
 
         public void display(Pair<String, String> pair) {

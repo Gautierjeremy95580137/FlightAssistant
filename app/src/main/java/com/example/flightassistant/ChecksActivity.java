@@ -32,14 +32,14 @@ public class ChecksActivity extends AppCompatActivity {
 
 
     }
-
+    //fonctions pour lancer les activité de checklist boeing
     public void goToBoeing(){
         Intent intent = new Intent(this, BoeingActivity.class);
         startActivity(intent);
 
     }
 
-
+    //fonctions pour lancer les activité de checklist airbus
     public void goToAirbus(){
         Intent intent = new Intent(this, AirbusActivity.class);
         startActivity(intent);
