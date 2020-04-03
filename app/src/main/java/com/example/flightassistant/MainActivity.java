@@ -25,6 +25,27 @@ public class MainActivity extends AppCompatActivity {
                 goToCharts();
             }
         });
+
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToConv();
+            }
+        });
+
+        findViewById(R.id.button6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToTod();
+            }
+        });
+
+        findViewById(R.id.button4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToCheck();
+            }
+        });
     }
 
     private void goToAbout() {
@@ -35,6 +56,22 @@ public class MainActivity extends AppCompatActivity {
     private void goToCharts() {
         final Intent intentCharts = new Intent(this, ChartsActivity.class);
         startActivity(intentCharts);
+    }
+
+    private void goToCheck(){
+        final Intent intentChecks = new Intent(this,ChecksActivity.class);
+        startActivity(intentChecks);
+    }
+
+    private void goToTod(){
+        final Intent intentTod = new Intent(this,TodActivity.class);
+        startActivity(intentTod);
+    }
+
+    private void goToConv(){
+
+        final Intent intentConv = new Intent(this,ConvActivity.class);
+        startActivity(intentConv);
     }
 
 

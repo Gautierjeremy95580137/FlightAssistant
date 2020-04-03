@@ -13,7 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LfoqActivity"></activity>
+        <activity android:name=".TodActivity"></activity>
+        <activity android:name=".AirbusActivity" />
+        <activity android:name=".ChecksActivity" />
+        <activity android:name=".ConvActivity" />
+        <activity android:name=".LfoqActivity" />
         <activity android:name=".LfbsActivity" />
         <activity android:name=".LfbzActivity" />
         <activity android:name=".LfmuActivity" />

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -223,6 +224,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                            // .setMessage(currentPair.second)
                             //.show();
 
+
+
                     //Intent intent = new Intent(this,PdfViewActivity.class);
                     if(name.getText()=="LFBA"|| description.getText()=="AGEN LA GARENNE") {
                         Intent intent = new Intent(view.getContext(), PdfActivity.class);
@@ -269,6 +272,237 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     }else if(name.getText()=="LFLA"|| description.getText()=="AUXERRE BRANCHES"){
                         Intent intent11 = new Intent(view.getContext(), LflaActivity.class);
                         view.getContext().startActivity(intent11);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
+                    }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
+                        Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
+                        view.getContext().startActivity(intent12);
+                    }else if(name.getText()=="LFOA"|| description.getText()=="AVORD"){
+                        Intent intent13 = new Intent(view.getContext(), LfoaActivity.class);
+                        view.getContext().startActivity(intent13);
+                    }else if(name.getText()=="LFSB"|| description.getText()=="BALE-MULHOUSE"){
+                        Intent intent14 = new Intent(view.getContext(), LfsbActivity.class);
+                        view.getContext().startActivity(intent14);
+                    }else if(name.getText()=="LFKB"|| description.getText()=="BASTIA PORETTA"){
+                        Intent intent15 = new Intent(view.getContext(), LfkbActivity.class);
+                        view.getContext().startActivity(intent15);
+                    }else if(name.getText()=="LFOB"|| description.getText()=="BEAUVAIS TILLE"){
+                        Intent intent16 = new Intent(view.getContext(), LfobActivity.class);
+                        view.getContext().startActivity(intent16);
+                    }else if(name.getText()=="LFBE"|| description.getText()=="BERGERAC DORDOGNE PERIGORD"){
+                        Intent intent17 = new Intent(view.getContext(), LfbeActivity.class);
+                        view.getContext().startActivity(intent17);
+                    }else if(name.getText()=="LFQM"|| description.getText()=="BESANCON LA VEZE"){
+                        Intent intent18 = new Intent(view.getContext(), LfqmActivity.class);
+                        view.getContext().startActivity(intent18);
+                    }else if(name.getText()=="LFMU"|| description.getText()=="BEZIERS VIAS"){
+                        Intent intent19 = new Intent(view.getContext(), LfmuActivity.class);
+                        view.getContext().startActivity(intent19);
+                    }else if(name.getText()=="LFBZ"|| description.getText()=="BIARRITZ PAYS BASQUE"){
+                        Intent intent20 = new Intent(view.getContext(), LfbzActivity.class);
+                        view.getContext().startActivity(intent20);
+                    }else if(name.getText()=="LFBS"|| description.getText()=="BISCAROSSE PARENTIS"){
+                        Intent intent21 = new Intent(view.getContext(), LfbsActivity.class);
+                        view.getContext().startActivity(intent21);
+                    }else if(name.getText()=="LFOQ"|| description.getText()=="BLOIS LE BREUIL"){
+                        Intent intent22 = new Intent(view.getContext(), LfoqActivity.class);
+                        view.getContext().startActivity(intent22);
                     }else if(name.getText()=="LFMV"|| description.getText()=="AVIGNON CAUMONT"){
                         Intent intent12 = new Intent(view.getContext(), LfmvActivity.class);
                         view.getContext().startActivity(intent12);
